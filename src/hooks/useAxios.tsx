@@ -23,7 +23,8 @@ export const useAxios = (axiosParams: AxiosRequestConfig) => {
   };
 
   const sendData = () => {
-    fetchData(axiosParams);
+    const result = fetchData(axiosParams);
+    return result
   }
 
   useEffect(() => {
